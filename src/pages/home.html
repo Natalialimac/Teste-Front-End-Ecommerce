@@ -1,18 +1,165 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-</head>
-<body>
-    <h1 class="hidden">Título Escondido</h1>
-    <h1>Home Page</h1>
-
-    <p class="blink">Olha a seta!</p>
-
-    <img src="../images/23604.png" alt="">
-    <!-- Imagens podem ser carregadas utilizando caminhos relativos -->
-</body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script type="text/javascript" src="../js/countForm.js"></script>
+      <title>Home</title>
+   </head>
+   <body>
+      <header>
+         <div class="overlay">
+            <img
+               style="width: 21vh; margin-top: -75px"
+               src="../images/logo.png"
+               alt="logo"
+               />
+         </div>
+      </header>
+      <p class="piscar">Não deixe para amanhã o que você pode comprar hoje</p>
+      <div class="containerNameCategories">
+         <div class="nameCategories">
+            <h4>Moda-Feminina/roupa/blusas/casaco-feminino</h4>
+         </div>
+      </div>
+      <div class="container">
+         <div>
+            <ul class="slider">
+              <li>
+                    <input type="radio" id="slide1" name="slide" checked>
+                    <label  for="slide2"><img class="labelSlider" src="../images/imagem1.jpg" /></label>
+                    <img  src="../images/imagem1.jpg" />
+              </li>
+             
+              <li>
+                    <input type="radio" id="slide2" name="slide">
+                    <label  for="slide1"><img class="labelSlider" src="../images/imagem3.jpg" /></label>
+                    <img  src="../images/imagem3.jpg" />
+              </li>
+          </ul>
+         </div>
+         <div class="containerInfor">
+            <div>
+               <h1 style="color: #a47b5bb0">Cropped Feminino</h1>
+            </div>
+            <div>
+               <h3>
+                  R$120,99
+               </h3>
+               <p class="saveMoney">economize R$35 reais e leve por</p>
+            </div>
+            <div>
+               <h2>R$85,99</h2>
+            </div>
+            <br />
+            <p>Selecione um tamanho*</p>
+            <div>
+               <div class="radio">
+                  <label>
+                  <input type="radio" name="option" value="pp">
+                  <span>PP</span>
+                  </label>
+               </div>
+               <div class="radio">
+                  <label>
+                  <input type="radio" name="option" value="p">
+                  <span>P</span>
+                  </label>
+               </div>
+               <div class="radio">
+                  <label>
+                  <input type="radio" name="option" value="m">
+                  <span>M</span>
+                  </label>
+               </div>
+               <div class="radio">
+                  <label>
+                  <input type="radio" name="option" value="g">
+                  <span>G</span>
+                  </label>
+               </div>
+               <div class="radio">
+                  <label>
+                  <input type="radio" name="option" value="gg">
+                  <span>GG</span>
+                  </label>
+               </div>
+               <div class="radio">
+                  <label>
+                  <input type="radio" name="option" value="eg">
+                  <span>EG</span>
+                  </label>
+               </div>
+            </div>
+            <section style="padding-top: 15%;">
+               <button style="margin-right:20px;width: 40px;
+                  height: 40px;" onclick="less()">-</button>
+               <p class="quant" style="display: contents;">1</p>
+               <button style="margin-left: 20px; width: 40px;
+                  height: 40px;" onclick="addition()">+</button>
+            </section>
+            <button style="border: none; cursor: pointer">
+            <img
+               style="background-color: white; width: 55px"
+               src="../images/carrinho-carrinho.png"
+               />
+            </button>
+            <button
+               style="border: none; margin: 22px 0px 11px 25px; cursor: pointer"
+               >
+            <img
+               style="background-color: white; width: 55px"
+               src="../images/favorito.png"
+               />
+            </button>
+            <div>
+               <img style="width: 40vh;" src="../images/N.png">
+            </div>
+         </div>
+      </div>
+      </div>
+      <div class="productInformation">
+         <div>
+            <h1 style="font-size: 30px">Descrição do produto</h1>
+            <p>Cor:	Diversas
+               Estilo:	básico
+               Tipo de Desenho:	Simples
+               Estação:	Primavera/Inverno
+               Tipo:	Cami
+               Decote:	Nenhum
+               Comprimento:	Regular
+               Tipo de Ajuste:	Ajuste Regular
+               Tecido:	Não estirável
+               Material:	Poliéster
+               Tecido/material:	100% Poliéster
+               Instruções de cuidados:	Lavagem de máquina ou lavagem profissional a seco
+               Puro:	Não
+               Composição de Forro:	100% Poliéster
+            </p>
+         </div>
+      </div>
+      <div class="productInformation">
+         <div>
+            <h1 style="font-size: 30px">Perguntas frequentes</h1>
+            <p>1. MEUS PEDIDOS</p>
+            <p>1.1. Consigo rastrear o minha Compra?  </p>
+            <p>Sim. As informações mais atualizadas sobre sua Compra e a situação de entrega de sua Compra estão disponíveis em Meus pedidos. Além disso, você será notificado do andamento do seu pedido pelo e-mail cadastrado.  
+            </p>
+            <p>1.2. Qual a empresa responsável pela entrega da minha Compra?  </p>
+            <p>As entregas são realizadas exclusivamente por empresas selecionadas e contratadas exclusivamente pela Gebana, não tendo o Cliente nenhuma influência sobre tal decisão. Neste momento, trabalhamos com as transportadoras TNT e Jadlog. Estamos analisando constantemente outras transportadoras para melhorarmos os valores de nossos fretes.
+            </p>
+            <p>1.3. Posso adicionar outro produto à Compra que eu fiz?  
+            </p>
+            <p>Não, após finalizada, a Compra não poderá ser alterada. Para adquirir outro produto, você deverá iniciar uma nova Compra.  
+            </p>
+         </div>
+      </div>
+      <!-- botão superior esquerdo -->
+      <div class="btnMaisBotoes">
+         <a href="form.html"
+            ><button class="btnCircular btnPrincipal"><img style="width: 15%; cursor: pointer;" src="../images//mensagem.png" /></button></a
+            >
+      </div>
+   </body>
 </html>

@@ -1,0 +1,63 @@
+.buttonForm {
+  padding: 6%;
+  background-color: #fff;
+  border: none;
+  display: flex;
+  cursor: pointer;
+}
+.button2 {
+  background-color: #fff;
+  color: #a47b5b;
+  border: 2px solid #a47b5b;
+  font-size: 35px;
+  float: right;
+  &:hover {
+    background-color: #a47b5b;
+    color: #ffffff;
+  }
+}
+.imageBack {
+  width: 15%;
+}
+.containerForm {
+  margin: -225px 185px 167px 185px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: inherit;
+}
+.textForm {
+  margin-bottom: 55px;
+  color: #a47b5b;
+}
+.labelForm {
+  font-family: sans-serif;
+  padding-right: 10px;
+  font-size: 30px;
+  color: #a47b5b;
+}
+textarea {
+  color: #a47b5b52;
+  font-size: 30px;
+}
+select {
+  color: #a47b5b;
+  font-size: 30px;
+}
+option {
+  color: #a47b5b;
+  font-size: 25px;
+}
+.inputForm {
+  width: 100%;
+  height: 100%;
+  color: #595f6e;
+  padding-top: 20px;
+  font-size: 25px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.pForm {
+  margin-bottom: 5%;
+}

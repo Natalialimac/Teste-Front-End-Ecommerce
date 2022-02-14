@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="../js/countForm.js"></script>
+    <title>Form</title>
+  </head>
+  <body>
+    <header>
+      <div class="overlay">
+        <img
+          style="width: 21vh; margin-top: -75px"
+          src="../images/logo.png"
+          alt="logo"
+        />
+      </div>
+    </header>
+
+    <button class="buttonForm" onClick="history.go(-1)">
+      <img class="imageBack" src="../images/botao-voltar.png" />
+    </button>
+    <div class="containerForm">
+      <form method="post" action="mailto:natalial.c@outlook.com">
+        <h1 class="textForm">Fale Conosco</h1>
+        <p class="pForm">
+          <label class="labelForm" for="nome">Nome:</label>
+          <input
+            class="inputForm"
+            id="nome"
+            name="nome"
+            required="required"
+            type="text"
+            placeholder="ex: natália lima"
+          />
+        </p>
+
+        <p class="pForm">
+          <label class="labelForm" for="email">E-mail:</label>
+          <input
+            class="inputForm"
+            id="email"
+            name="email"
+            required="required"
+            type="email"
+            placeholder="ex: natalial.c@outlook.com"
+          />
+        </p>
+
+        <p class="pForm">
+          <label class="labelForm" for="tel">Telefone:</label>
+          <input
+            class="inputForm"
+            id="tel"
+            name="tel"
+            required="required"
+            type="tel"
+            placeholder="ex: (71)99611-9180"
+          />
+        </p>
+        <p class="pForm">
+          <label class="labelForm" for="assunto">Assunto:</label>
+
+          <select id="assunto" required>
+            <option value="">Selecione uma opção</option>
+            <option value="cor">Cor errada</option>
+            <option value="pedido">Códido do pedido</option>
+            <option value="tamanho">Tamanho da roupa</option>
+            <option value="outros">Outros</option>
+          </select>
+        </p>
+        <p class="pForm">
+          <label class="labelForm" for="text">Mensagem:</label>
+
+          <textarea name="text" rows="5" cols="33" required></textarea>
+        </p>
+
+        <p class="pForm">
+          <button class="button2">Enviar</button>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
